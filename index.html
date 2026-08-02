@@ -1,42 +1,125 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Game Player Setup</title>
-    <link rel="stylesheet" href="main 2.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Game Player Setup</title>
+
+<style>
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f4f8;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 500px;
+    margin: 40px auto;
+    background-color: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,.15);
+}
+
+h1 {
+    text-align: center;
+}
+
+label {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    box-sizing: border-box;
+    border: 1px solid #999;
+    border-radius: 5px;
+}
+
+button {
+    width: 100%;
+    margin-top: 20px;
+    padding: 12px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: #222;
+    color: white;
+}
+
+.output {
+    margin-top: 25px;
+    padding: 15px;
+    border: 2px solid #333;
+    border-radius: 8px;
+    background-color: #fafafa;
+}
+</style>
 </head>
+
 <body>
 
-    <div class="container">
-        <h1>Game Player Setup</h1>
-        <p>Enter your player information before starting the game.</p>
+<div class="container">
 
-        <form id="gameForm">
-            <label for="username">User Name</label>
-            <input type="text" id="username" required>
+<h1>Game Player Setup</h1>
 
-            <label for="weapons">Weapons</label>
-            <input type="text" id="weapons" required>
+<p>Enter your player information before starting the game.</p>
 
-            <label for="health">Health/Damage</label>
-            <input type="number" id="health" required>
+<form id="gameForm">
 
-            <label for="points">Point Total</label>
-            <input type="number" id="points" required>
+<label for="username">User Name</label>
+<input type="text" id="username" required>
 
-            <button type="submit">Submit</button>
-        </form>
+<label for="weapons">Weapons</label>
+<input type="text" id="weapons" required>
 
-        <div id="output" class="output">
-            <h2>Player Information</h2>
-            <p id="outputUsername"></p>
-            <p id="outputWeapons"></p>
-            <p id="outputHealth"></p>
-            <p id="outputPoints"></p>
-        </div>
-    <script src="script 2.js"></script>
+<label for="health">Health/Damage</label>
+<input type="number" id="health" required>
+
+<label for="points">Point Total</label>
+<input type="number" id="points" required>
+
+<button type="submit">Submit</button>
+
+</form>
+
+<div class="output">
+
+<h2>Player Information</h2>
+
+<p id="outputUsername"></p>
+<p id="outputWeapons"></p>
+<p id="outputHealth"></p>
+<p id="outputPoints"></p>
+
+</div>
+
+</div>
+
+<script>
+document.getElementById("gameForm").addEventListener("submit", function(event) {
+
+event.preventDefault();
+
+document.getElementById("outputUsername").textContent =
+"User Name: " + document.getElementById("username").value;
+
+document.getElementById("outputWeapons").textContent =
+"Weapons: " + document.getElementById("weapons").value;
+
+document.getElementById("outputHealth").textContent =
+"Health/Damage: " + document.getElementById("health").value;
+
+document.getElementById("outputPoints").textContent =
+"Point Total: " + document.getElementById("points").value;
+
+});
+</script>
+
 </body>
 </html>
-
-
