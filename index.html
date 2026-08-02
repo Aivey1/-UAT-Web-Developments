@@ -1,31 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Movie List Organizer</title>
-<link rel="stylesheet" href="main.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Player Setup</title>
+    <link rel="stylesheet" href="main.css">
 </head>
-
 <body>
 
-<h1>Movie List Organizer</h1>
+    <div class="container">
+        <h1>Game Player Setup</h1>
+        <p>Enter your player information before starting the game.</p>
 
-<p>Enter a movie title:</p>
+        <form id="gameForm">
+            <label for="username">User Name</label>
+            <input type="text" id="username" required>
 
-<input type="text" id="movieInput">
+            <label for="weapons">Weapons</label>
+            <input type="text" id="weapons" required>
 
-<br><br>
+            <label for="health">Health/Damage</label>
+            <input type="number" id="health" required>
 
-<button id="addButton">Add Movie</button>
-<button id="displayButton">Display Movies</button>
-<button id="resetButton">Reset List</button>
+            <label for="points">Point Total</label>
+            <input type="number" id="points" required>
 
-<h2>Movie List</h2>
+            <button type="submit">Submit</button>
+        </form>
 
-<div id="movieList"></div>
+        <div id="output" class="output">
+            <h2>Player Information</h2>
+            <p id="outputUsername"></p>
+            <p id="outputWeapons"></p>
+            <p id="outputHealth"></p>
+            <p id="outputPoints"></p>
+        </div>
+    </div>
 
-<script src="script.js"></script>
-
+    <script src="script.js"></script>
 </body>
 </html>
