@@ -1,0 +1,81 @@
+:root {
+  font-family: Arial, sans-serif;
+  color: #ffffff;
+  background: #172033;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  display: grid;
+  place-items: center;
+  padding: 20px;
+}
+
+.game-container {
+  width: min(94vw, 620px);
+  text-align: center;
+}
+
+h1 { margin: 0 0 8px; }
+
+#status {
+  min-height: 24px;
+  margin: 0 0 14px;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+.board {
+  width: 100%;
+  aspect-ratio: 1;
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  border: 8px solid #754c29;
+  border-radius: 8px;
+  box-shadow: 0 12px 30px #0008;
+  overflow: hidden;
+}
+
+.square {
+  position: relative;
+  display: grid;
+  place-items: center;
+  border: 0;
+  padding: 0;
+}
+
+.light { background: #f1d9b5; }
+.dark { background: #8b5a2b; cursor: pointer; }
+.dark:hover { filter: brightness(1.08); }
+.valid-move { box-shadow: inset 0 0 0 5px #ffd54f; }
+
+.piece {
+  width: 74%;
+  height: 74%;
+  border-radius: 50%;
+  border: 3px solid #ffffff88;
+  box-shadow: inset 0 -7px 0 #0004, 0 3px 5px #0007;
+  pointer-events: none;
+}
+
+.red { background: #e53935; }
+.black { background: #202124; }
+.selected { outline: 5px solid #ffd54f; outline-offset: 2px; }
+
+button#resetButton {
+  margin-top: 18px;
+  padding: 12px 24px;
+  border: 0;
+  border-radius: 8px;
+  background: #4f8cff;
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button#resetButton:hover { background: #3374e6; }
+.instructions { color: #c9d3e7; }
