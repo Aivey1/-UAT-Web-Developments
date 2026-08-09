@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Alverse AI Records — ten original songs created with generative AI.">
+  <title>Alverse AI Records</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="hero">
+    <nav><span class="logo">ALVERSE AI RECORDS</span><a href="#music">The Collection</a></nav>
+    <div class="hero-copy">
+      <p class="eyebrow">HUMAN IDEAS × GENERATIVE SOUND</p>
+      <h1>Ten songs.<br><span>Three AI studios.</span></h1>
+      <p>An original digital record label exploring motivation, technology, late-night reflection, and championship energy.</p>
+      <a class="cta" href="#music">Explore the music ↓</a>
+    </div>
+    <div class="orb" aria-hidden="true"></div>
+  </header>
+
+  <main id="music">
+    <section class="intro">
+      <div><p class="eyebrow">THE FIRST RELEASE</p><h2>Alverse: Volume One</h2></div>
+      <p>Each track began as a written idea and was transformed into music with Suno, Udio, or Treblo. Select a tool below or search by title.</p>
+    </section>
+
+    <section class="controls" aria-label="Music filters">
+      <label><span class="sr-only">Search songs</span><input id="search" type="search" placeholder="Search songs…"></label>
+      <div id="filters" class="filters"></div>
+    </section>
+
+    <section id="songGrid" class="song-grid" aria-live="polite"></section>
+  </main>
+
+  <footer><span>ALVERSE AI RECORDS</span><p>Created with generative AI for educational purposes.</p></footer>
+  <script src="script.js"></script>
+</body>
+</html>
