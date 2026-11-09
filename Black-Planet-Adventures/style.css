@@ -1,0 +1,23 @@
+/* Shared site styles: both PHP pages link to this stylesheet. */
+* { box-sizing: border-box; }
+body { margin: 0; min-height: 100vh; background: linear-gradient(145deg,#141b31,#48281f); color: #f8f4ef; font: 16px/1.6 Arial, sans-serif; }
+header { padding: 34px 16px 20px; text-align: center; }
+header h1 { margin: 0; color: #ffb58d; font-size: clamp(28px,5vw,44px); }
+header p { margin: 4px 0; }
+nav { display: flex; justify-content: center; gap: 14px; flex-wrap: wrap; padding: 12px; background: #111827; }
+nav a { color: white; text-decoration: none; padding: 8px 14px; border-radius: 6px; }
+nav a:hover, nav a[aria-current] { background: #a9452e; }
+.panel { width: min(92%, 720px); margin: 34px auto; padding: clamp(20px,4vw,36px); background: #222b3c; border: 1px solid #7d493c; border-radius: 14px; box-shadow: 0 10px 28px #0005; }
+h2 { margin-top: 0; color: #ffb58d; }
+label { display: block; margin: 16px 0 5px; font-weight: bold; }
+input:not([type="radio"]), select, textarea { width: 100%; padding: 12px; background: #fefefe; color: #111; border: 2px solid transparent; border-radius: 7px; font: inherit; }
+input:focus, select:focus, textarea:focus, a:focus, button:focus { outline: 3px solid #ffb58d; outline-offset: 2px; }
+fieldset { margin-top: 20px; border: 1px solid #a77c6b; border-radius: 8px; }
+legend { font-weight: bold; }
+.choice { display: inline-flex; align-items: center; gap: 6px; margin: 6px 20px 6px 0; font-weight: normal; }
+button, .button { display: inline-block; margin-top: 22px; padding: 12px 20px; border: none; border-radius: 7px; background: #e56e46; color: #171717; font: bold 16px Arial, sans-serif; text-decoration: none; cursor: pointer; }
+button:hover, .button:hover { background: #ff9d76; }
+.error { color: #ffd5c8; font-weight: bold; }
+dt { margin-top: 16px; font-weight: bold; color: #ffb58d; }
+dd { margin-left: 0; overflow-wrap: anywhere; }
+footer { text-align: center; padding: 24px; color: #ddd; }
