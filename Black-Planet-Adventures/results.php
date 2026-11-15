@@ -26,7 +26,7 @@ $valid = $submitted && !in_array('', $values, true)
 <head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Black Planet Adventures | Application Results</title><link rel="stylesheet" href="style.css"></head>
 <body>
 <header><h1>Black Planet Adventures</h1><p>Application Summary</p></header>
-<nav aria-label="Main navigation"><a href="index.php">Home</a><a href="application.php">Pilot Application</a></nav>
+<nav aria-label="Main navigation"><a href="index.php">Home</a><a href="departure.php">Mars Departures</a><a href="application.php">Pilot Application</a></nav>
 <main class="panel">
 <?php if ($valid): ?>
   <h2>Application Received!</h2>
