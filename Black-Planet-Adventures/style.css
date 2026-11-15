@@ -21,3 +21,12 @@ button:hover, .button:hover { background: #ff9d76; }
 dt { margin-top: 16px; font-weight: bold; color: #ffb58d; }
 dd { margin-left: 0; overflow-wrap: anywhere; }
 footer { text-align: center; padding: 24px; color: #ddd; }
+/* Mars departure clock: responsive cards with readable contrast. */
+.countdown { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; margin: 28px 0 18px; }
+.countdown div { text-align: center; padding: 20px 8px; border: 1px solid #b96a4e; border-radius: 12px; background: #111827; }
+.countdown strong { display: block; font-size: clamp(28px, 6vw, 52px); line-height: 1.2; color: #ffb58d; font-variant-numeric: tabular-nums; }
+.countdown span { display: block; margin-top: 8px; font-weight: bold; }
+.launch-message { font-size: 1.25rem; font-weight: bold; color: #ffcfad; }
+.launch-date { line-height: 1.8; }
+.fine-print { color: #ddd; font-size: .88rem; }
+@media (max-width: 420px) { .countdown { gap: 6px; } .countdown div { padding: 16px 4px; } }
