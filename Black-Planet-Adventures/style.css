@@ -21,3 +21,11 @@ button:hover, .button:hover { background: #ff9d76; }
 dt { margin-top: 16px; font-weight: bold; color: #ffb58d; }
 dd { margin-left: 0; overflow-wrap: anywhere; }
 footer { text-align: center; padding: 24px; color: #ddd; }
+/* Countdown page: responsive, readable cards for the remaining time. */
+.countdown { margin: 26px 0; padding: 22px; background: #111827; border-radius: 12px; text-align: center; }
+.countdown-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; }
+.countdown-grid div { padding: 14px 5px; background: #354052; border-radius: 9px; }
+.countdown-grid strong { display: block; font-size: clamp(26px, 6vw, 48px); line-height: 1.2; color: #ffb58d; }
+.countdown-grid span { display: block; font-size: 14px; }
+#launch-message { font-weight: bold; margin-bottom: 0; }
+.countdown-note { color: #e3d9d3; font-size: 14px; }
