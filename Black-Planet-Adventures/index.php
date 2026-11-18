@@ -9,7 +9,7 @@
 </head>
 <body>
 <header><h1>Black Planet Adventures</h1><p>Your journey beyond Earth begins here.</p></header>
-<nav aria-label="Main navigation"><a href="index.php" aria-current="page">Home</a><a href="application.php">Pilot Application</a></nav>
+<nav aria-label="Main navigation"><a href="index.php" aria-current="page">Home</a><a href="application.php">Pilot Application</a><a href="countdown.php">Mars Countdown</a></nav>
 <main class="panel">
   <h2>Explore Mars With Us</h2>
   <p>Black Planet Adventures is a future-focused space tourism company planning unforgettable guided journeys to Mars. Our mission is to make space exploration exciting, safe, and accessible to tomorrow's travelers.</p>
