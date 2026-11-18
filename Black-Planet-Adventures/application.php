@@ -10,7 +10,7 @@
 </head>
 <body>
 <header><h1>Black Planet Adventures</h1><p>Pilot Recruitment</p></header>
-<nav aria-label="Main navigation"><a href="index.php">Home</a><a href="application.php" aria-current="page">Pilot Application</a></nav>
+<nav aria-label="Main navigation"><a href="index.php">Home</a><a href="application.php" aria-current="page">Pilot Application</a><a href="countdown.php">Mars Countdown</a></nav>
 <main class="panel">
   <h2>Apply to Pilot a Mars Tour</h2>
   <p>Complete all seven questions. Fields are checked before your application is submitted.</p>
